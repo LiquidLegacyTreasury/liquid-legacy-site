@@ -15,13 +15,13 @@
       overflow-x: hidden;
     }
 
-    /* --- Fade and Slide Animation --- */
+    /* --- Fade & Slide Animation --- */
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(50px); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
-    /* --- Gold Glow Pulse for Logo --- */
+    /* --- Gold Glow Pulse --- */
     @keyframes goldGlow {
       0% { filter: drop-shadow(0 0 10px #a57c1b); }
       50% { filter: drop-shadow(0 0 25px #ffdd6b); }
@@ -140,18 +140,21 @@
   <section>
     <h2>About Liquid Legacy</h2>
     <p>
-      Liquid Legacy is a modern treasury system built to simplify inheritance using today’s decentralized technology.  
-      We provide a secure, transparent way to ensure your wealth reaches your family exactly as you intended — without banks, middlemen, or delays.
+      Liquid Legacy is a modern treasury system built to simplify inheritance using today’s decentralized technology.
+      We provide a secure, transparent way to ensure your wealth reaches your family exactly as you intended —
+      without banks, middlemen, or delays.
     </p>
     <p><em>“We believe wealth should not end with us — it should begin with us.”</em></p>
   </section>
 
   <section class="contact-box">
     <h2>Get in Touch</h2>
-    <form action="https://formspree.io/f/mjvllxyz" method="POST">
+    <!-- Secure Formspree form -->
+    <form action="https://formspree.io/f/xblqjdlw" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Tell us what kind of legacy you want to build..."></textarea>
+      <textarea name="message" rows="4"
+        placeholder="Tell us what kind of legacy you want to build..."></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -161,3 +164,4 @@
   </footer>
 </body>
 </html>
+
