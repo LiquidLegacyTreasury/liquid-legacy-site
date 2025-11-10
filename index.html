@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquid Legacy</title>
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #d4af37;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 80px 20px 30px;
+      background: radial-gradient(circle at center, #1b1b1b 0%, #000000 100%);
+    }
+
+    img.logo {
+      width: 260px;
+      height: auto;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 15px #c9a43d);
+    }
+
+    h1 {
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 1.1em;
+    }
+
+    h2 {
+      color: #caa94a;
+      font-size: 1.5em;
+      border-bottom: 1px solid #caa94a;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #f1e3b0;
+      margin-bottom: 25px;
+    }
+
+    .contact-box {
+      background-color: #141414;
+      border: 1px solid #d4af37;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 60px auto;
+      max-width: 420px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    }
+
+    input, textarea, button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 10px;
+      border: 1px solid #d4af37;
+      background: transparent;
+      color: #d4af37;
+      font-size: 1em;
+      border-radius: 6px;
+      font-family: 'Georgia', serif;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #b1952d;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: #d4af37;
+      color: #0b0b0b;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f1d065;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 25px;
+      font-size: 0.9em;
+      color: #9f8c3a;
+      border-top: 1px solid #2b2b2b;
+      background-color: #0d0d0d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="liquid-logo.png" alt="Liquid Legacy Logo" class="logo" />
+    <h1>Inheritance Built for the Digital Age</h1>
+  </header>
+
+  <section>
+    <h2>About Liquid Legacy</h2>
+    <p>
+      Liquid Legacy is a modern treasury system built to simplify inheritance using today’s decentralized technology.  
+      We provide a secure, transparent way to ensure your wealth reaches your family exactly as you intended — without banks, middlemen, or delays.
+    </p>
+    <p><em>“We believe wealth should not end with us — it should begin with us.”</em></p>
+  </section>
+
+  <section class="contact-box">
+    <h2>Get in Touch</h2>
+    <form action="mailto:yourname@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Tell us what kind of legacy you want to build..."></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Liquid Legacy — Inheritance. Simplified.
+  </footer>
+</body>
+</html>
