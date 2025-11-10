@@ -15,42 +15,40 @@
       overflow-x: hidden;
     }
 
-    /* Fade + Slide Animation */
+    /* --- Fade and Slide Animation --- */
     @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Gold Glow Pulse for Logo --- */
+    @keyframes goldGlow {
+      0% { filter: drop-shadow(0 0 10px #a57c1b); }
+      50% { filter: drop-shadow(0 0 25px #ffdd6b); }
+      100% { filter: drop-shadow(0 0 10px #a57c1b); }
     }
 
     header {
       padding: 80px 20px 30px;
       background: radial-gradient(circle at center, #1b1b1b 0%, #000000 100%);
-      animation: fadeInUp 1.4s ease forwards;
+      animation: fadeInUp 2s ease forwards;
     }
 
     img.logo {
       width: 260px;
       height: auto;
       margin-bottom: 20px;
-      filter: drop-shadow(0 0 15px #c9a43d);
-      opacity: 0;
-      animation: fadeInUp 1.4s ease forwards;
-      animation-delay: 0.2s;
+      animation: goldGlow 4s ease-in-out infinite, fadeInUp 2.5s ease forwards;
     }
 
     h1 {
-      font-size: 2.2em;
+      font-size: 2.3em;
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-top: 10px;
       opacity: 0;
-      animation: fadeInUp 1.4s ease forwards;
-      animation-delay: 0.4s;
+      animation: fadeInUp 2.2s ease forwards;
+      animation-delay: 0.6s;
     }
 
     section {
@@ -60,8 +58,8 @@
       line-height: 1.7;
       font-size: 1.1em;
       opacity: 0;
-      animation: fadeInUp 1.4s ease forwards;
-      animation-delay: 0.6s;
+      animation: fadeInUp 2.2s ease forwards;
+      animation-delay: 1s;
     }
 
     h2 {
@@ -87,8 +85,8 @@
       max-width: 420px;
       box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
       opacity: 0;
-      animation: fadeInUp 1.4s ease forwards;
-      animation-delay: 0.8s;
+      animation: fadeInUp 2.2s ease forwards;
+      animation-delay: 1.3s;
     }
 
     input, textarea, button {
@@ -128,8 +126,8 @@
       border-top: 1px solid #2b2b2b;
       background-color: #0d0d0d;
       opacity: 0;
-      animation: fadeInUp 1.4s ease forwards;
-      animation-delay: 1s;
+      animation: fadeInUp 2.2s ease forwards;
+      animation-delay: 1.6s;
     }
   </style>
 </head>
@@ -150,7 +148,6 @@
 
   <section class="contact-box">
     <h2>Get in Touch</h2>
-    <!-- Use Formspree form link below -->
     <form action="https://formspree.io/f/mjvllxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
